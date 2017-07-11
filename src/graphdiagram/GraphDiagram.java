@@ -15,6 +15,7 @@ public class GraphDiagram {
         SaveImageTests.saveBlank();
         SaveImageTests.saveWhiteBackground();
         SaveImageTests.saveArrows();
+        System.out.println("Tests completed.");
     }
     
 }
