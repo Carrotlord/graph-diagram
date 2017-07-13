@@ -5,6 +5,7 @@ import graphdiagram.CreateImage;
 import graphdiagram.DiagramImage;
 import graphdiagram.Direction;
 import graphdiagram.SaveImage;
+import graphdiagram.Text;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
@@ -32,5 +33,12 @@ public class SaveImageTests {
         image.drawEntity(new Arrow(50, 250, 100, 12, Direction.SOUTH));
         image.drawEntity(new Arrow(150, 400, 100, 12, Direction.WEST));
         image.save("arrows.png");
+    }
+    
+    public static void saveText() {
+        DiagramImage image = new DiagramImage(400, 300);
+        image.fillBackground(Color.WHITE);
+        image.drawEntity(new Text("Hello, world!", 50, 50));
+        image.save("text.png");
     }
 }
