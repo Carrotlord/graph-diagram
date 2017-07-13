@@ -41,4 +41,14 @@ public class SaveImageTests {
         image.drawEntity(new Text("Hello, world!", 50, 50));
         image.save("text.png");
     }
+    
+    public static void saveCropped() {
+        DiagramImage image = new DiagramImage(100, 600);
+        image.fillBackground(Color.WHITE);
+        image.drawEntity(new Arrow());
+        image.drawEntity(new Arrow(50, 200, 100, 12, Direction.NORTH));
+        image.drawEntity(new Arrow(50, 250, 100, 12, Direction.SOUTH));
+        image.drawEntity(new Arrow(150, 400, 100, 12, Direction.WEST));
+        image.save("arrows_cropped.png");
+    }
 }
