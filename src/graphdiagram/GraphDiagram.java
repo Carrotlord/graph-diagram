@@ -17,6 +17,7 @@ public class GraphDiagram {
         SaveImageTests.saveArrows();
         SaveImageTests.saveText();
         SaveImageTests.saveCropped();
+        SaveImageTests.saveRotatedArrows();
         System.out.println("Tests completed.");
     }
     
