@@ -1,5 +1,8 @@
 package graphdiagram;
 
+import fileio.DirectoryTools;
+import fileio.FileTools;
+import java.util.Arrays;
 import tests.GraphTests;
 import tests.SaveImageTests;
 
@@ -21,8 +24,17 @@ public class GraphDiagram {
         SaveImageTests.saveCropped();
         SaveImageTests.saveRotatedArrows();
         */
+        
+        /*
         GraphTests.orderedDirectedGraphTest();
         System.out.println("Tests completed.");
+        */
+        
+        String currentDir = DirectoryTools.getCurrentDirectory();
+        System.out.println(
+            Arrays.toString(DirectoryTools.listFilepaths(currentDir))
+        );
+        System.out.println(FileTools.fileToString("test.txt"));
     }
     
 }
